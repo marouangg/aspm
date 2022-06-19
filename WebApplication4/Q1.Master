@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Q1.master.cs" Inherits="WebApplication4.Q1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            position: absolute;
+            top: 19px;
+            left: 777px;
+            z-index: 1;
+            width: 108px;
+            height: 19px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+    <ul>
+    
+        <li> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Q4.aspx">Q4</asp:HyperLink>
+            <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Text="Label"></asp:Label>
+        </li>
+    </ul>
+        
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>  
+    
+    <footer><p>&copy;<%:DateTime.Today.Year %> Copyright ismo tetouan</p></footer>
+</body>
+</html>

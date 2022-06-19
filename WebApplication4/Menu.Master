@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="WebApplication4.Menu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 638px;
+        }
+        .auto-style2 {
+            width: 175px;
+        }
+        .auto-style3 {
+            width: 175px;
+            height: 79px;
+        }
+        .auto-style4 {
+            height: 79px;
+        }
+        .auto-style5 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <table class="auto-style1">
+        <tr>
+            <td class="auto-style3" style="background-color: #FF0000;"></td>
+            <td class="auto-style4" style="color: #FFFFFF; background-color: #008000;">
+                <h1 class="auto-style5">Gestion des logement</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2" style="background-color: #FF0000">
+                <ul>
+                    <li><a runat="server" href="~/Contact">Contact</a></li>
+                    <li><a runat="server" href="~/WebForm2"> Test des variables Applications</a></li>
+                    <li><a runat="server" href="~/testCookies"> Test des variables cookies</a></li>
+                    <li><a runat="server" href="~/Webform3"> Test des variables cookies</a></li>
+                    <li><a runat="server" href="~/Webform4"> queryString</a></li>
+                </ul>
+            </td>
+            <td>        <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div></td>
+        </tr>
+    </table>
+    <footer>
+        <p>&copy;<%:DateTime.Now.Year %> copyright ismo tetouan</p>
+    </footer>
+    </form>
+   
+</body>
+</html>
